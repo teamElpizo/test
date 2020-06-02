@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Manning365 </title>
+    <link rel="icon" href="https://raw.githubusercontent.com/teamElpizo/css/pictures/fireicon.png" sizes="128x128" type="image/png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://teamelpizo.github.io/css/solutionsDesign.css" rel="stylesheet" type="text/css" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	  <script type="text/javascript" src="https://teamelpizo.github.io/scripts/jquery-3.2.1.min.js"></script>
+	  <script type="text/javascript" src="https://teamelpizo.github.io/scripts/all-plugins.js"></script>
+	  <script type="text/javascript" src="https://teamelpizo.github.io/scripts/plugins-activate.js"></script>
+  <script type="text/javascript" src="https://teamelpizo.github.io/scripts/solutions.js"></script>
+	</head>
+
+	<body class="is-preload">
+<header>
+					<div class="logo">
+					<i class="fa fa-code-branch" style="font-size:60px;color:red;" aria-hidden="true"><span> Team Elpizo { LEGACY. ACES. DMGX. } </span></i>
+				</div>
+	</header>
+
+				<div id="wrapper">
+						<nav id="nav">
+							<ul>
+								<li><a href="#calendar"> Calendar View </a></li>
+								<li><a href="#roster"> Roster Dashboard </a></li>
+								<li><a href="#callSign"> Call Sign View </a></li>
+								<li><a href="#personnel"> Personnel View </a></li>
+								<li><a href="#codes"> Programmes Used and Our Codes </a></li>
+							</ul>
+						</nav>
+
+				<a class="menu-toggle rounded" href="#">
+					<i class="fa fa-bars"></i>
+				</a>
+				<nav id="sidebar-wrapper">
+					<ul class="sidebar-nav">
+						<li class="sidebar-brand">
+							<a class="smooth-scroll" href="#Header"></a>
+						</li>
+						<li class="sidebar-nav-item">
+							<a href="https://teamelpizo.github.io/home/home.html" title="Home Page"> Home </a>
+						</li>
+						<li class="sidebar-nav-item">
+							<a class="smooth-scroll" href="#About">Problem</a>
+						</li>
+						<li class="sidebar-nav-item">
+							<a class="active" href="#Services">Solutions</a>
+						</li>
+						<li class="sidebar-nav-item">
+							<a class="smooth-scroll" href="#Portfolio">Reasons</a>
+						</li>
+						<li class="sidebar-nav-item">
+							<a class="smooth-scroll" href="#Testimonials"> Reflections</a>
+						</li>
+						<li class="sidebar-nav-item">
+							<a href="https://teamelpizo.github.io/aboutus/aboutus.html" title="Who We Are">About Us</a>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<section id="intro" class="main">
+							<div class="spotlight">
+								<div class="content">
+									<header class="major">
+										<h2> Manning365</h2>
+									</header>
+									<p> This app creates a user interface for first responders who also hold the secondary position of Roster-in-charge, to create, manage and maintain the schedules of their fellow colleagues. </p>
+									<p> This solutions aims to address the problems explained <a href="https://www.example.com">explained here</a>, and is one application Team Elpizo has coded as part of our integrated solutions. </p>
+									<p> Manning365 has many functionalities, allowing the roster IC to:
+										<ul><li> Add/Remove new personnel from the system </li>
+											<li> Add/Edit the personnel's particulars in the system </li>
+											<li> Generate a unique schedule for everybody, as well as choose the format to display the roster- by Rota, role or rank</li>
+											<li> Generate an individual specs sheet detailing the number of MCs taken, when taken and how much left for the year</li>
+											<li> Generate an individual specs sheet detailing the number of VLs taken, when taken and how much left for the year</li>
+											<li> Generate an individual specs sheet detailing the personnel's particulars, shift pattern for the week/month, call sign attached to previously</li>
+											<li> Update the manning and vechicles personnel is attached to for previous shifts</li></ul>
+											<p>However, do note that applying for VLs, OVLs permission, checking of payslip and submission of reports will still be done via the HRMS, NSpam and DMGX. We can add this application to the intranet system that is already in place in SCDF, or provide a secure password protected and encrypted platform for home access. </p>
+
+<form action="/php/action.php" method="post">
+	<ul>
+  <h4>Choose a Date to edit: </h4> &nbsp; &nbsp;
+  <input type="date" id="datemin" name="datef" min="2020-06-12">
+</ul>
+
+
+<ul>
+<h4>Shift type</h4>		<select id="am/pm" name="shiftHours" style="width: 300px;">
+<option value="24 hours- 0730 hours to 0730 hours">24 hours</option>
+<option value="Day shift- 0730 hours to 2000 hours">AM</option>
+<option value="Night shift- 1930 hours to 0800 hours">PM </option>
+<option value="Office hours- 0730 hours to 1730 hours">Office hours</option>
+</select>
+</ul>
+
+<ul>
+<h4>Call sign of Appliance:</h4>		<select id="callSign" name="callSign" style="width: 200px;">
+<option value="Alpha 111">A111</option>
+<option value="Alpha 112">A112</option>
+<option value="Pump Ladder 111">PL111</option>
+<option value="Fire-Medical Vehicle 111">FMV111</option>
+<option value="Fire Bike 111">FB111</option>
+<option value="Combined Platform Ladder 111">CPL111</option>
+</select>
+</ul>
+
+<h4> A111 Paramedic </h4>
+<input list="a111P" name="a111Paramedic">
+  <datalist id="a111P">
+    <option value="Ang An-Sel">
+    <option value="Bong Jia Hui">
+    <option value="Deng Fei Fan">
+    <option value="Marcus Chan Y J">
+    <option value="Sam Mong Onn">
+  </datalist>
+<br/><br/>
+	<h4> A111 Driver </h4>
+  <input list="a111D" name="a111Driver">
+	  <datalist id="a111D">
+      <option value="Yazid Bin Abdullah">
+      <option value="Rashid Bin Kana">
+      <option value="Soh Leong Heng">
+      <option value="Adil">
+      <option value="Andy Ng">
+	  </datalist>
+<br/><br/>
+		<h4> A111 Medic </h4>
+    <input list="a111M" name="a111Medic">
+    <datalist id="a111M">
+      <option value="Yao Hong Bin">
+      <option value="Ho Li Fen Shirleen">
+      <option value="Noraini">
+      <option value="Shalini d/o Ranjabutan">
+      <option value="Bobo Chan">
+    </datalist>
+
+<br/>
+
+<p>
+<div class="wrapper">
+    <input type="submit" />
+    <div class="success">
+      </div>
+</div>
+</p>
+</form>
+
+<br/><br/>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+Select image to upload:
+<input type="file" name="fileToUpload" id="fileToUpload">
+<input type="submit" value="Upload Image" name="submit">
+</form>
+
+
+								</div>
+						</section>
+
+	</body>
+</html>
